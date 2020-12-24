@@ -5,4 +5,11 @@ const sum = (num, num2) => {
   return `Your sum is ${num + num2}`
 }
 
-module.exports = sum
+module.exports = {
+  sum,
+  value: 1,
+  userIds: [1,2,3],
+  action(){
+    console.log('action!')
+  }
+}
